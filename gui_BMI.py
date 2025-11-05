@@ -138,7 +138,7 @@ def result_BMI():
     result = w / (h/100) ** 2
     print(result)
     
-    result_label['text'] = f'{result:>4.1f}'
+    result_label['text'] = f'{result:>4.0f}'
 
 
 result_button = tkinter.Button(
@@ -157,7 +157,7 @@ result_button.place(x=280, y=340)
 result_label = tkinter.Label(master=window, text='0',
                     font=('arial', 45, 'bold'),
                     bg='lightblue',
-                    fg='gray10')
+                    fg='gray90')
 result_label.place(x=280, y=370)
 
 
